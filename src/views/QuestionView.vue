@@ -25,6 +25,7 @@
           <cropper
             style="height: 300px; margin:auto"
             :src="currentQuestionImageUrl"
+            :transitions="false"
             :canvas="false"
             :checkOrientation="false"
             :crossOrigine="false"
@@ -228,6 +229,7 @@ export default {
             }
             return;
           }
+
           const dataToAdd = [];
           result.data.questions.forEach((q) => {
             if (!this.seenInsightIds.has(q.insight_id)) {
@@ -285,7 +287,7 @@ export default {
     },
     noRemainingQuestion: function() {
       return (
-        this.questionBuffer.length == 1 &&
+        this.questionBuffer.length === 1 &&
         this.questionBuffer[0] === NO_QUESTION_LEFT
       );
     },
