@@ -13,7 +13,7 @@
     "@vue/cli-plugin-eslint": "^5.0.4",
     "@vue/cli-service": "^5.0.4",
     "@yaireo/tagify": "^4.9.7",
-    "axios": "^0.27.0",
+    "axios": "^1.20.0",
     "fastest-levenshtein": "^1.0.12",
     "semantic-ui-vue": "^0.11.0",
     "v-viewer": "^1.6.4",
